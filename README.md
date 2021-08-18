@@ -5,13 +5,16 @@ application up and running.
 
 Things you may want to cover:
 
-これは、次の教材を参考に作られたアプリケーションです。
+このアプリケーションは　以下を参考に作成しております。
 [*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
 （第6版）
 [Michael Hartl](https://www.michaelhartl.com/) 著
 
+scaffoldで　userとmessageを作成
+
 * Ruby version
   Ruby 3.0.2
+  Rails '~> 6.1.4'
 
 * Database 
   production  PostgreSQL

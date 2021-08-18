@@ -1,7 +1,13 @@
+// CSSの仕様で、paddingなどの設定を行った場合、その要素全体のサイズが大きくなってしまうのを避ける
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fff;
   color: #333;
-  margin: 33px; }
+  // margin: 33px; 
+}
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -63,3 +69,31 @@ div.actions {
 
 label {
   display: block; }
+
+// ここからheader
+.header {
+  height: 100px;
+  background-color: greenyellow;
+}
+
+// ここからwrapper
+.wrapper {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  &_aside{
+    width: 300px;
+    background-color: limegreen;
+  }
+  &_main{
+    flex: 1;
+    background-color: lime;
+    width: calc(100vh - 300px);
+  }
+}
+
+
+// ここからfooter
+.footer {
+  height: 100px;
+  background-color: seagreen;
+}
