@@ -1,3 +1,20 @@
 <header class ="header">
-  header
+  <div class="header-left">
+    <%= link_to image_tag("united-nations-303670_1280.png",alt:"logo", width:"80px", class:"header-left-logo"), "#" %>
+    <h2 class="header-left-title"><%= link_to "CHAT APP", "#", alt:"title", data: {"turbolinks" => false} %></h2>
+  </div>
+  <div class="header-middle">
+    <div class="header-middle-center"></div>
+    <div class="header-middle-link">
+      <ul>
+        <li><%= link_to "java", "#", class:"#" %></li>
+        <li><%= link_to "java", "#", class:"#" %></li>
+        <li><%= link_to "java", "#", class:"#" %></li>
+      </ul>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="header-button"><%= link_to "ログイン", "#" %></div>
+    <div class="header-button"><%= link_to "新規登録", "#" %></div>
+  </div>
 </header>

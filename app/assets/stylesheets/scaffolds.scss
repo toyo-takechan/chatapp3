@@ -72,8 +72,58 @@ label {
 
 // ここからheader
 .header {
+  display: flex;
   height: 100px;
   background-color: greenyellow;
+  &-left {
+    width: 300px;
+    display: flex;
+    &-logo{
+      margin-top:  20px;
+      margin-left: 10px;
+      border-radius: 50%;
+    }
+    &-title {
+      margin-top: 20px;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+    &-title a{
+      // color:yellow;
+      color: whitesmoke;
+      text-decoration: none;
+    }
+  }
+  &-middle {
+    display: flex;
+    flex: 1;
+    &-center {
+      flex: 1;
+    }
+    &-link {
+      min-width: 250px;
+    }
+  }
+  &-right {
+    min-width: 250px;
+    // background-color: yellow;
+    display: flex;
+  }
+  &-button {
+    text-align: center;
+    font-size: 18px;
+    color:whitesmoke;
+    margin: 20px 10px;
+    height: 65px;
+    line-height: 65px;
+    min-width: 80px;
+    background-color: #239b76;
+    border-radius: 4px;
+  }
+  &-button a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
 }
 
 // ここからwrapper
@@ -83,11 +133,11 @@ label {
   &_aside{
     width: 300px;
     background-color: limegreen;
+    // background-color: #2f3e51;
   }
   &_main{
     flex: 1;
-    background-color: lime;
-    width: calc(100vh - 300px);
+    // background-color: lime;
   }
 }
 
@@ -96,4 +146,10 @@ label {
 .footer {
   height: 100px;
   background-color: seagreen;
+  display: flex;
+  &-nav {
+    display: flex;
+    min-width: calc(100% /4 );
+    margin:0 auto;
+  }
 }
