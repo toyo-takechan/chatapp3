@@ -102,6 +102,12 @@ label {
     }
     &-link {
       min-width: 250px;
+      &_path {
+        list-style: none;
+        & a{
+          text-decoration: none;
+        }
+      }
     }
   }
   &-right {
