@@ -1,15 +1,15 @@
 <header class ="header">
   <div class="header-left">
-    <%= link_to image_tag("united-nations-303670_1280.png",alt:"logo", width:"80px", class:"header-left-logo"), "#" %>
-    <h2 class="header-left-title"><%= link_to "CHAT APP", "#", alt:"title", data: {"turbolinks" => false} %></h2>
+    <%= link_to image_tag("united-nations-303670_1280.png",alt:"logo", width:"80px", class:"header-left-logo"), root_url %>
+    <h2 class="header-left-title"><%= link_to "CHAT APP", root_url, alt:"title", data: {"turbolinks" => false} %></h2>
   </div>
   <div class="header-middle">
     <div class="header-middle-center"></div>
     <div class="header-middle-link">
       <ul>
-        <li><%= link_to "java", "#", class:"#" %></li>
-        <li><%= link_to "java", "#", class:"#" %></li>
-        <li><%= link_to "java", "#", class:"#" %></li>
+        <li><%= link_to "fun", home_fun_path, class:"#" %></li>
+        <li><%= link_to "waste", home_waste_path, class:"#" %></li>
+        <li><%= link_to "play", home_play_path, class:"#" %></li>
       </ul>
     </div>
   </div>
