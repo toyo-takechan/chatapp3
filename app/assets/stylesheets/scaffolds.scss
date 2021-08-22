@@ -6,7 +6,7 @@
 body {
   background-color: #fff;
   color: #333;
-  // margin: 33px; 
+  // margin: 33px;
 }
 
 body, p, ol, ul, td {
@@ -140,13 +140,55 @@ label {
     width: 300px;
     background-color: limegreen;
     // background-color: #2f3e51;
+    &_top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      background-color: rgb(35, 167, 35);
+      .side-bar {
+        width: 260px;
+        height: 20px;
+        display: flex;
+        // background-color: honeydew;
+        justify-content: space-between;
+        align-items: center;
+        &_link a{
+          text-decoration: none;
+        }
+        &_name{
+          color: #ffffff;
+        }
+        &_icon{
+          color: #ffffff;
+          margin-right: 5px;
+        }
+      }
+
+    }
+    &_middle {
+      background-color: rgb(82, 199, 78);
+      padding: 0 20px;
+      .group {
+        box-sizing: border-box;
+        padding: 20px 0 40px;
+        color: #ffffff;
+        font-weight: bold;
+        &_name {
+          font-size: 15px;
+        }
+        &_message {
+          margin-top: 5px;
+          font-size: 11px;
+        }
+      }
+    }
   }
   &_main{
     flex: 1;
     // background-color: lime;
   }
 }
-
 
 // ここからfooter
 .footer {

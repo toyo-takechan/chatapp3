@@ -11,4 +11,4 @@ ActiveStorage.start()
 
 // 追記
 // require('jquery')
-require("play.js")
+require('play')
