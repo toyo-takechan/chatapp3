@@ -1,0 +1,32 @@
+<%= provide( :title, "/play" ) %>
+<div class="wrapper">
+  <%= render 'layouts/aside' %>
+  <div class="wrapper_main">
+    <div id="omikuji">?</div>
+  </div>
+</div>
+
+<script>
+'use strict';
+
+{
+  const btn = document.getElementById('omikuji');
+
+  btn.addEventListener('click', () => {
+    const n = Math.floor(Math.random() * 3);
+    // btn.textContent = n;
+
+    switch (n) {
+      case 0:
+        btn.textContent = '大吉';
+        break;
+      case 1:
+        btn.textContent = '中吉';
+        break;
+      case 2:
+        btn.textContent = '凶';
+        break;
+    }
+  });
+}
+</script>
