@@ -11,11 +11,28 @@
   font-weight: bold;
   font-size: 80px;
   cursor: pointer;
+  user-select: none;
   &:hover {
     opacity: 0.8;
   }
   &:active {
     box-shadow: 0 5px #28814d;
     margin-top: 35px;
+  }
+}
+
+// ここからfun
+.bingo {
+  font-family: 'Courier New', monospace;
+  font-size: 40px;
+  margin-top:  40px;
+  margin-left: 40px;
+  th, td {
+  background :#45ef8c;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
   }
 }
