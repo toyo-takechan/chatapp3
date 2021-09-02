@@ -134,7 +134,7 @@ label {
 
 // ここからwrapper
 .wrapper {
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 150px);
   display: flex;
   &_aside{
     width: 300px;
@@ -187,17 +187,115 @@ label {
   &_main{
     flex: 1;
     // background-color: lime;
+    .left-header {
+      float: left;
+      // background-color: lime;
+      box-sizing: border-box;
+      height: 100px;
+      padding: 0 40px;
+      &_title {
+        color: #333;
+        font-size: 20px;
+        margin-top: 35px
+      }
+      &_members {
+        color: #999;
+        display: flex;
+        font-size: 12px;
+        margin-top: 15px;
+      }
+      &_member {
+        display: inline-block;
+        padding-right: 5px;
+      }
+
+    }
+    .right-header {
+      // background-color: lime;
+      float: right;
+      width: 100px;
+      border: 1px solid;
+      margin: 15px 20px;
+      &_button {
+        font-size: 20px;
+        color: rgb(59, 59, 165);
+        // float: right;
+        height: 40px;
+        text-align: center;
+        line-height: 30px;
+        margin-top: 28px;
+        padding: 0 20px;
+
+      }
+    }
+    .message {
+      background-color: #FAFAFA;
+      box-sizing: border-box;
+      padding: 120px 40px 0;
+      height: calc(100% - 100px - 90px);
+      &-upper {
+        display: flex;
+        &_user-name {
+          color: #434a54;
+          font-size: 16px;
+          font-weight: bold
+        }
+        &_date {
+          color: #999;
+          font-size: 12px;
+          padding-left: 10px;
+        }
+      }
+      &-lower {
+        margin-top: 10px;
+        &_content {
+          color: #434a54;
+          font-size: 14px;
+          margin-bottom: 40px
+        }
+      }
+    }
+    &_form {
+      display: flex;
+      // background-color: #DDDDDD;
+      box-sizing: border-box;
+      height: 90px;
+      padding: 20px 50px 20px 40px;
+      .form_content {
+        display: block;
+        min-width: 700px;
+        border-radius: 20px;
+        font-size: 24px;
+        margin-left: 120px;
+        margin-bottom: 10px;
+      }
+      .form-btn {
+        min-width: 300px;
+        margin-left: 160px;
+        min-width: 200px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
   }
 }
 
+
+
 // ここからfooter
 .footer {
-  height: 100px;
+  height: 50px;
   background-color: seagreen;
   display: flex;
   &-nav {
     display: flex;
+    font-size: 16px;
     min-width: calc(100% /4 );
     margin:0 auto;
+    line-height: 50px;
+  }
+  &-nav a {
+    text-decoration: none;
   }
 }
