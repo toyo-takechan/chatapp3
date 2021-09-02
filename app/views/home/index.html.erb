@@ -2,6 +2,80 @@
 <div class="wrapper">
   <%= render 'layouts/aside' %>
   <div class="wrapper_main">
-  Hello World
+    <div class="left-header" >
+      <div class="left-header_title" >
+          グループ名
+      <ul class="left-header_members" >
+          Member：
+          <li class="left-header_member"> メンバー名 </li>
+          <li class="left-header_member"> メンバー名 </li>
+          <li class="left-header_member"> メンバー名 </li>
+      </ul>
+      </div>
+    </div>
+
+      <div class="right-header" >
+        <div class="right-header_button" >
+          <%= link_to "Edit", "#" %>
+        </div>
+      </div>
+    <div class ="message">
+      <div class="message-upper" >
+        <div class="message-upper_user-name" >
+            メンバー
+        </div>
+        <div class="message-upper_date" >
+            2017/04/04
+        </div>
+        <div class="meesage-lower">
+          <div class="message-lower_content">
+            メッセージ
+          </div>
+        </div>
+      </div>
+     <div class="message-upper" >
+        <div class="message-upper_user-name" >
+            メンバー
+        </div>
+        <div class="message-upper_date" >
+            2017/04/04
+        </div>
+        <div class="meesage-lower">
+          <div class="message-lower_content">
+            メッセージ
+          </div>
+        </div>
+      </div>
+      <div class="message-upper" >
+        <div class="message-upper_user-name" >
+            メンバー
+        </div>
+        <div class="message-upper_date" >
+            2017/04/04
+        </div>
+        <div class="meesage-lower">
+          <div class="message-lower_content">
+            メッセージ
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="wrapper_main_form">
+
+  <%= form_with(model: @micropost, local: true) do |f| %>
+    <%# <%= render 'shared/error_messages', object: f.object%>
+
+   <%= f.text_area :content, placeholder: "投稿してください。", class: "form_content" %>
+
+   <%= f.submit "投稿する。", class: "form-btn" %>
+
+   <span class="image">
+    <%# <%= f.file_field :image, accept: "image/jpeg,image/gif,image/png" %>
+   </span>
+
+  <% end %>
+
+ </div>
   </div>
 </div>
