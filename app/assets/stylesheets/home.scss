@@ -36,3 +36,44 @@
   line-height: 100px;
   }
 }
+// ここからwaste calender
+.calender {
+  margin: 20px 20px;
+  font-family: 'Courier New', monospace;
+  font-size: 80px;
+  border-collapse: collapse;
+  border: 10px solid #eee;
+  thead,tfoot {
+    margin-top: 100px;
+    background: #eee;
+  }
+  tbody td:first-child {
+    color: red;
+  }
+
+  tbody td:last-child {
+    color: blue;
+  }
+
+  tfoot {
+    font-weight: bold;
+  }
+  th,td {
+    font-size: 60px;
+    padding: 20px;
+    text-align: center;
+  }
+  td.disabled {
+    opacity: 0.3;
+  }
+  &_title {
+    // padding-bottom: 50px;
+    line-height: 150%;
+    word-spacing: 20px;
+  }
+  #prev, #next, #today {
+    cursor: pointer;
+    user-select: none;
+  }
+
+}
